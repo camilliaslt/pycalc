@@ -8,6 +8,8 @@ def calculatrice(x:float, y:float, signe:str):
         print(x + y)
      elif (signe == '-'):
         print(x - y)
+    elif (signe == '*'):
+        print(x*y)
 
 x = float(sys.argv[1])
 signe = sys.argv[2]
