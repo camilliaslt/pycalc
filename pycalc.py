@@ -4,16 +4,16 @@ print(sys.argv)
 
 def calculatrice(x:float, y:float, signe:str):
     
-    if (signe == '+'):
+     if (signe == '+'):
         print(x + y)
      elif (signe == '-'):
         print(x - y)
-    elif (signe == '*'):
+     elif (signe == '*'):
         print(x*y)
      elif (signe == '/'):
-        if (y == 0):
+       if (y == 0):
             print("opération imposible")
-        else :
+       else :
            print(x/y)
 
 x = float(sys.argv[1])
