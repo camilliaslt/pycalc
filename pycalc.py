@@ -9,14 +9,14 @@ def calculatrice(x:float, y:float, signe:str):
      elif (signe == '-'):
         print(x - y)
      elif (signe == '*'):
-        print(x*y)
-     elif (signe == '/'):
-       if (y == 0):
-            print("opération imposible")
-       else :
-           print(x/y)
+        nombre = 0
+        for i in range(y):
+            nombre += x
+        print(nombre)
+
+
 
 x = float(sys.argv[1])
-signe = sys.argv[2]
+signe = sys.argv[2] 
 y = float(sys.argv[3])
 calculatrice(x,y,signe)
